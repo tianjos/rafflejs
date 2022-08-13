@@ -1,8 +1,8 @@
 import { Person } from './_person';
 
 export class Holder extends Person {
-    constructor(id?: string) {
-        super(id)
+    constructor(name: string, id?: string) {
+        super(name, id)
     }
     public canHolder(): boolean {
         return true;

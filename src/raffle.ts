@@ -1,6 +1,8 @@
 import currency from "currency.js";
 import { DateTime } from "luxon";
 import { Creator } from './creator';
+import { Donor } from './donor';
+import { Holder } from './holder';
 import { guardAgainstRange } from './_utils';
 
 export class Raffle {
@@ -10,7 +12,7 @@ export class Raffle {
 
     public readonly holders: Holder[];
 
-    public readonly donors: Donors[];
+    public readonly donors: Donor[];
 
     public readonly ticketValue: currency;
 
