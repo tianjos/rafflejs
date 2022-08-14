@@ -6,7 +6,7 @@
   "scripts": {
     "test": "ava",
     "build": " npm run clean && tsc --build",
-    "prepare": "npm run build",
+    "prepare": "husky install && npm run build",
     "clean": "rimraf dist"
   },
   "ava": {
@@ -16,6 +16,9 @@
     "require": [
       "ts-node/register"
     ]
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix"
   },
   "keywords": [
     "raffle",
