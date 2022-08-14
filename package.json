@@ -18,7 +18,10 @@
     ]
   },
   "lint-staged": {
-    "*.ts": "eslint --fix"
+    "*.ts": [
+      "eslint --fix",
+      "npx ava --fail-fast"
+    ]
   },
   "keywords": [
     "raffle",

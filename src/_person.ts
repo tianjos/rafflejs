@@ -1,6 +1,6 @@
 import { genUID } from './_utils';
 
-export abstract class Person {
+export default abstract class Person {
     public readonly id: string
 
     public readonly name: string

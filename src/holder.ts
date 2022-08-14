@@ -1,6 +1,6 @@
-import { Person } from './_person';
+import Person from './_person';
 
-export class Holder extends Person {
+export default class Holder extends Person {
     constructor(name: string, id?: string) {
         super(name, id)
     }

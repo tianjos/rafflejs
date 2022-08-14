@@ -1,6 +1,6 @@
-import { Person } from './_person';
+import Person from './_person';
 
-export class Creator extends Person {
+export default class Creator extends Person {
     constructor(name: string, id?: string) {
         super(name, id)
     }
